@@ -1,0 +1,31 @@
+﻿@model Jadhav.Question2.ViewModels.BooksByAuthorNameVM
+
+@if (Model.Books != null)
+{
+    if (Model.Books.Count() > 0)
+    {
+        <div class="col-6 mb-3">
+            <table class="table table-hover">
+                <tr>
+                    <th>Book Name</th>
+                    <th>Genre</th>
+                    <th>ISBN</th>
+                    <th>Published Date</th>
+                </tr>
+                @foreach (var prd in Model.Books)
+                {
+                    <tr>
+                        <td>@prd.BookName</td>
+                        <td>@prd.Genre</td>
+                        <td>@prd.ISBN</td>
+                        <td>@prd.PublishedDate </td>
+                    </tr>
+                }
+            </table>
+        </div>
+    }
+    else
+    {
+        <div class="h3">No Records</div>
+    }
+}
