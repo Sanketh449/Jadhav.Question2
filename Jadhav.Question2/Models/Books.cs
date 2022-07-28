@@ -28,7 +28,7 @@ namespace Jadhav.Question2.Models
 
            
             public DateTime PublishedDate { get; set; } 
-            public DateTime AddedDate { get; set; } = DateTime.Now;
+            public DateTime AddedDateDate { get; set; } = DateTime.Now;
 
     }
 }

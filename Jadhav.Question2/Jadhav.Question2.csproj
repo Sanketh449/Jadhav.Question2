@@ -136,6 +136,10 @@
     <Compile Include="Migrations\202207281210042_changedname.designer.cs">
       <DependentUpon>202207281210042_changedname.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202207281241396_changesmade.cs" />
+    <Compile Include="Migrations\202207281241396_changesmade.designer.cs">
+      <DependentUpon>202207281241396_changesmade.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\Books.cs" />
@@ -206,6 +210,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202207281210042_changedname.resx">
       <DependentUpon>202207281210042_changedname.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202207281241396_changesmade.resx">
+      <DependentUpon>202207281241396_changesmade.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
